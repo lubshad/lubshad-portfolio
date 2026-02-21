@@ -1,281 +1,498 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lubshad Pattarathil | Flutter & Django Engineer</title>
-  <meta
-    name="description"
-    content="Portfolio of Lubshad Pattarathil, a Flutter and Django software engineer focused on cross-platform apps, backend systems, and CI/CD delivery."
-  />
+  <title>Lubshad Pattarathil | Flutter &amp; Django Engineer</title>
+  <meta name="description"
+    content="Portfolio of Lubshad Pattarathil, a Flutter and Django software engineer focused on cross-platform apps, backend systems, and CI/CD delivery." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
     href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap"
-    rel="stylesheet"
-  />
+    rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
+
+  <!-- Scroll Progress Bar -->
+  <div id="progress-bar" role="progressbar" aria-hidden="true"></div>
+
+  <!-- Ambient glow orbs -->
   <div class="ambient ambient-left" aria-hidden="true"></div>
   <div class="ambient ambient-right" aria-hidden="true"></div>
 
-  <header class="site-header">
-    <div class="brand">LP</div>
-    <nav>
+  <!-- ── Header ───────────────────────────────────────────────────────── -->
+  <header class="site-header" id="site-header">
+    <div class="header-inner">
+      <a href="#about" class="brand" aria-label="Home">LP</a>
+
+      <nav id="desktop-nav" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#credentials">Credentials</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+    <!-- Mobile drawer -->
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation">
       <a href="#about">About</a>
       <a href="#work">Work</a>
       <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
       <a href="#credentials">Credentials</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
 
   <main>
-    <section class="hero" id="about">
+
+    <!-- ── Hero ─────────────────────────────────────────────────────────── -->
+    <section class="hero container" id="about">
       <div class="hero-layout">
         <div class="hero-copy">
-          <p class="kicker">Flutter & Django Software Engineer</p>
+          <p class="kicker">Flutter &amp; Django Software Engineer</p>
           <h1>
-            Lubshad Pattarathil<br />
-            Building real-world products with <span>Flutter</span> and <span>Django</span>.
+            Lubshad<br />
+            <span class="highlight">Pattarathil</span>
           </h1>
           <p class="intro">
-            Passionate software engineer with 5+ years of experience delivering mobile and backend
-            solutions from concept to deployment. I specialize in cross-platform app development
-            with Flutter and robust backend systems with Django, with a strong focus on quality,
-            scalability, and continuous learning.
+            Passionate software engineer with 5+ years of experience delivering mobile and
+            backend solutions from concept to deployment. I specialize in cross-platform
+            app development with Flutter and robust backend systems with Django — focused
+            on quality, scalability, and continuous learning.
           </p>
-          <p class="meta">
-            Kozhikode, India 673018
+          <p class="meta-loc">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+              <circle cx="12" cy="10" r="3" />
+            </svg>
+            Kozhikode, India
           </p>
           <div class="hero-actions">
-            <a class="btn primary" href="#work">View Projects</a>
-            <a class="btn ghost" href="https://www.linkedin.com/in/lubshad-pattarathil-3b61701a3/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a class="btn primary" href="#work">
+              View Projects
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </a>
+            <a class="btn ghost" href="https://www.linkedin.com/in/lubshad-pattarathil-3b61701a3/" target="_blank"
+              rel="noopener noreferrer">
+              LinkedIn
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                <polyline points="15 3 21 3 21 9" />
+                <line x1="10" y1="14" x2="21" y2="3" />
+              </svg>
+            </a>
+            <a class="btn ghost" href="mailto:lubshad4u4@gmail.com">
+              Email Me
+            </a>
           </div>
         </div>
-        <figure class="profile-frame">
-          <img src="profile-image.png" alt="Lubshad Pattarathil profile photo" class="profile-image" />
+
+        <figure class="profile-frame" aria-hidden="true">
+          <img src="profile-image.png" alt="" class="profile-image" />
         </figure>
       </div>
-      <ul class="stats">
-        <li><strong>5+</strong><span>Years Experience</span></li>
-        <li><strong>100+</strong><span>Applications Deployed</span></li>
-        <li><strong>50%</strong><span>Release Cycle Reduction</span></li>
+
+      <!-- Stats -->
+      <ul class="stats" role="list">
+        <li class="reveal reveal-delay-1">
+          <strong>5+</strong>
+          <span>Years Experience</span>
+        </li>
+        <li class="reveal reveal-delay-2">
+          <strong>100+</strong>
+          <span>Applications Deployed</span>
+        </li>
+        <li class="reveal reveal-delay-3">
+          <strong>50%</strong>
+          <span>Release Cycle Reduction</span>
+        </li>
       </ul>
     </section>
 
-    <section class="section" id="work">
-      <div class="section-heading">
+    <!-- ── Work ──────────────────────────────────────────────────────────── -->
+    <section class="section container" id="work">
+      <div class="section-heading reveal">
         <p class="kicker">Selected Work</p>
         <h2>Projects delivered across Flutter, Django, and DevOps.</h2>
       </div>
 
       <div class="cards">
-        <article class="card">
-          <p class="tag">Flutter + Face Recognition + Liveness Detection</p>
+
+        <article class="card reveal reveal-delay-1">
+          <div class="card-icon" aria-hidden="true">🔐</div>
+          <p class="tag">Flutter · Face Recognition · Liveness Detection</p>
           <h3>Attendance Application</h3>
           <p>
-            Developed and maintained an attendance system with anti-spoofing face liveness
-            detection and face recognition for seamless and secure check-in/check-out.
+            Attendance system with anti-spoofing face liveness detection and face recognition
+            for seamless and secure check-in/check-out.
           </p>
         </article>
 
-        <article class="card">
-          <p class="tag">Flutter + Real-time Tracking + Geolocation</p>
+        <article class="card reveal reveal-delay-2">
+          <div class="card-icon" aria-hidden="true">📍</div>
+          <p class="tag">Flutter · Real-time Tracking · Geolocation</p>
           <h3>Delivery Tracking Application</h3>
           <p>
-            Built a delivery platform with background and real-time location tracking to
-            monitor driver movement, improve visibility, and optimize routes.
+            Delivery platform with background and real-time location tracking to monitor driver
+            movement, improve visibility, and optimize routes.
           </p>
         </article>
 
-        <article class="card">
-          <p class="tag">Flutter + NFC Security</p>
+        <article class="card reveal reveal-delay-3">
+          <div class="card-icon" aria-hidden="true">🏷️</div>
+          <p class="tag">Flutter · NFC Security</p>
           <h3>NFC Secure Tag Application</h3>
           <p>
-            Developed an NFC app with password-protected tags to secure data access and
-            prevent unauthorized NFC usage.
+            NFC app with password-protected tags to secure data access and prevent unauthorized
+            NFC usage across enterprise workflows.
           </p>
         </article>
 
-        <article class="card">
-          <p class="tag">Flutter Desktop + QR + Printer Integration</p>
+        <article class="card reveal reveal-delay-1">
+          <div class="card-icon" aria-hidden="true">🎫</div>
+          <p class="tag">Flutter Desktop · QR · Printer Integration</p>
           <h3>EventXpro Ticketing</h3>
           <p>
-            Created a Windows application that connects to Wi-Fi and direct printers,
-            printing tickets instantly when event QR codes are scanned.
+            Windows application connecting to Wi-Fi and direct printers, printing tickets
+            instantly when event QR codes are scanned.
           </p>
         </article>
 
-        <article class="card">
-          <p class="tag">Flutter + Firebase + Cloud Functions + OCR</p>
+        <article class="card reveal reveal-delay-2">
+          <div class="card-icon" aria-hidden="true">🤖</div>
+          <p class="tag">Flutter · Firebase · Cloud Functions · OCR</p>
           <h3>Business Card OCR Recognition</h3>
           <p>
-            Implemented OCR-based business card recognition to extract contact data and
-            store details with high accuracy using Cloud Functions.
+            OCR-based business card recognition to extract contact data and store details with
+            high accuracy using Cloud Functions.
           </p>
         </article>
 
-        <article class="card">
-          <p class="tag">Flutter + E-commerce + Booking</p>
+        <article class="card reveal reveal-delay-3">
+          <div class="card-icon" aria-hidden="true">🏋️</div>
+          <p class="tag">Flutter · E-commerce · Booking</p>
           <h3>Sports and Fitness Platform</h3>
           <p>
-            Developed a sports and fitness application combining e-commerce, booking
-            workflows, and fitness features in one integrated product.
+            Sports and fitness application combining e-commerce, booking workflows, and fitness
+            features in one integrated product.
           </p>
         </article>
 
-        <article class="card">
-          <p class="tag">Flutter + Django + GitHub Actions + Fastlane + Kubernetes</p>
-          <h3>Multi-App Delivery & Deployment</h3>
+        <article class="card reveal reveal-delay-1">
+          <div class="card-icon" aria-hidden="true">🚀</div>
+          <p class="tag">Flutter · Django · GitHub Actions · Fastlane · Kubernetes</p>
+          <h3>Multi-App Delivery &amp; Deployment</h3>
           <p>
-            Independently delivered 6 web apps and 2 cross-platform mobile apps, while
-            automating releases and deploying production workloads on Kubernetes.
+            Independently delivered 6 web apps and 2 cross-platform mobile apps, automating
+            releases and deploying production workloads on Kubernetes.
           </p>
         </article>
+
       </div>
     </section>
 
-    <section class="section split" id="skills">
-      <div>
+    <!-- ── Skills ─────────────────────────────────────────────────────────── -->
+    <section class="section split container" id="skills">
+      <div class="split-left reveal">
         <p class="kicker">Core Strengths</p>
         <h2>Engineering depth with product ownership.</h2>
         <p>
           Experienced across product delivery, server management, CI/CD automation, and team
-          mentorship. I collaborate directly with clients and teams to deliver reliable
-          software solutions aligned to business needs.
+          mentorship. I collaborate directly with clients and teams to deliver reliable software
+          solutions aligned to business needs.
         </p>
       </div>
 
       <div class="skill-grid">
-        <div>
+
+        <div class="skill-card reveal reveal-delay-1">
           <h4>Flutter</h4>
-          <ul>
-            <li>GetX / BLoC / Provider / Riverpod</li>
-            <li>Cross-platform App Development</li>
-            <li>Jetpack Compose</li>
-            <li>SwiftUI</li>
-          </ul>
+          <div class="skill-tags">
+            <span class="skill-tag">GetX</span>
+            <span class="skill-tag">BLoC</span>
+            <span class="skill-tag">Provider</span>
+            <span class="skill-tag">Riverpod</span>
+            <span class="skill-tag">Cross-platform</span>
+            <span class="skill-tag">Jetpack Compose</span>
+            <span class="skill-tag">SwiftUI</span>
+          </div>
         </div>
-        <div>
+
+        <div class="skill-card reveal reveal-delay-2">
           <h4>Django</h4>
-          <ul>
-            <li>Django REST Framework</li>
-            <li>Server-side Development</li>
-            <li>Python</li>
-            <li>Firebase & Cloud Functions</li>
-          </ul>
+          <div class="skill-tags">
+            <span class="skill-tag">Django REST</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">Firebase</span>
+            <span class="skill-tag">Cloud Functions</span>
+            <span class="skill-tag">PostgreSQL</span>
+          </div>
         </div>
-        <div>
-          <h4>Cloud & DevOps</h4>
-          <ul>
-            <li>Docker & Kubernetes</li>
-            <li>GitHub Actions</li>
-            <li>Fastlane CI/CD</li>
-            <li>Server Management</li>
-          </ul>
+
+        <div class="skill-card reveal reveal-delay-3">
+          <h4>Cloud &amp; DevOps</h4>
+          <div class="skill-tags">
+            <span class="skill-tag">Docker</span>
+            <span class="skill-tag">Kubernetes</span>
+            <span class="skill-tag">GitHub Actions</span>
+            <span class="skill-tag">Fastlane</span>
+            <span class="skill-tag">Server Mgmt</span>
+          </div>
         </div>
-        <div>
+
+        <div class="skill-card reveal reveal-delay-1">
           <h4>Additional</h4>
-          <ul>
-            <li>JavaScript</li>
-            <li>Odoo</li>
-            <li>Client Requirement Gathering</li>
-            <li>Code Review & Mentorship</li>
-          </ul>
+          <div class="skill-tags">
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">Odoo</span>
+            <span class="skill-tag">Client Liaison</span>
+            <span class="skill-tag">Code Review</span>
+            <span class="skill-tag">Mentorship</span>
+          </div>
         </div>
+
       </div>
     </section>
 
-    <section class="section timeline">
-      <div class="section-heading">
+    <!-- ── Experience ─────────────────────────────────────────────────────── -->
+    <section class="section container" id="experience">
+      <div class="section-heading reveal">
         <p class="kicker">Experience</p>
         <h2>Work history across Flutter, Django, and delivery engineering.</h2>
       </div>
 
       <div class="timeline-items">
-        <article>
-          <p class="time">February 2024 - Current</p>
-          <h3>Software Engineer | Veuz Concepts Pvt Ltd, Kozhikode, India</h3>
-          <ul>
-            <li>Built OCR-based business card recognition with Cloud Functions for accurate contact extraction.</li>
-            <li>Automated Flutter deployment with Fastlane-based CI/CD pipelines.</li>
-            <li>Managed application servers and deployments for availability and performance.</li>
-          </ul>
-        </article>
 
-        <article>
-          <p class="time">August 2022 - November 2023</p>
-          <h3>Software Engineer | Lilac Infotech Pvt Ltd, Kozhikode, India</h3>
-          <ul>
-            <li>Designed CI/CD for Flutter apps with Fastlane and GitHub Actions.</li>
-            <li>Reduced release cycle time by 50% and improved code integration reliability.</li>
-            <li>Developed sports and fitness application with e-commerce and booking systems.</li>
-            <li>Led client meetings, reviewed code, and mentored junior developers.</li>
-          </ul>
-        </article>
+        <div class="timeline-entry reveal">
+          <div class="timeline-dot-col">
+            <div class="timeline-dot"></div>
+            <div class="timeline-line"></div>
+          </div>
+          <div class="timeline-content">
+            <p class="time">February 2024 — Present</p>
+            <h3>Software Engineer · Veuz Concepts Pvt Ltd, Kozhikode</h3>
+            <ul>
+              <li>Built OCR-based business card recognition with Cloud Functions for accurate contact extraction.</li>
+              <li>Automated Flutter deployment with Fastlane-based CI/CD pipelines.</li>
+              <li>Managed application servers and deployments for availability and performance.</li>
+            </ul>
+          </div>
+        </div>
 
-        <article>
-          <p class="time">January 2022 - August 2022</p>
-          <h3>Software Engineer | Inzo Innovations Pvt Ltd, Calicut, India (Remote)</h3>
-          <ul>
-            <li>Independently developed and deployed 6 web apps and 2 cross-platform apps.</li>
-            <li>Integrated Fastlane with GitHub Actions to streamline releases.</li>
-            <li>Deployed applications on Kubernetes for scalability and high availability.</li>
-          </ul>
-        </article>
+        <div class="timeline-entry reveal reveal-delay-1">
+          <div class="timeline-dot-col">
+            <div class="timeline-dot"></div>
+            <div class="timeline-line"></div>
+          </div>
+          <div class="timeline-content">
+            <p class="time">August 2022 — November 2023</p>
+            <h3>Software Engineer · Lilac Infotech Pvt Ltd, Kozhikode</h3>
+            <ul>
+              <li>Designed CI/CD for Flutter apps with Fastlane and GitHub Actions.</li>
+              <li>Reduced release cycle time by 50% and improved code integration reliability.</li>
+              <li>Developed sports and fitness application with e-commerce and booking systems.</li>
+              <li>Led client meetings, reviewed code, and mentored junior developers.</li>
+            </ul>
+          </div>
+        </div>
 
-        <article>
-          <p class="time">December 2020 - December 2021</p>
-          <h3>Flutter Developer | Primal Codes Pvt Ltd, Kozhikode, India</h3>
-          <ul>
-            <li>Pioneered Flutter adoption and migrated legacy applications.</li>
-            <li>Onboarded and mentored new engineers to improve delivery consistency.</li>
-            <li>Applied Django to build and maintain robust backend systems.</li>
-            <li>Developed and deployed over 8 applications.</li>
-          </ul>
-        </article>
+        <div class="timeline-entry reveal reveal-delay-2">
+          <div class="timeline-dot-col">
+            <div class="timeline-dot"></div>
+            <div class="timeline-line"></div>
+          </div>
+          <div class="timeline-content">
+            <p class="time">January 2022 — August 2022</p>
+            <h3>Software Engineer · Inzo Innovations Pvt Ltd, Calicut (Remote)</h3>
+            <ul>
+              <li>Independently developed and deployed 6 web apps and 2 cross-platform apps.</li>
+              <li>Integrated Fastlane with GitHub Actions to streamline releases.</li>
+              <li>Deployed applications on Kubernetes for scalability and high availability.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-entry reveal reveal-delay-3">
+          <div class="timeline-dot-col">
+            <div class="timeline-dot"></div>
+            <div class="timeline-line"></div>
+          </div>
+          <div class="timeline-content">
+            <p class="time">December 2020 — December 2021</p>
+            <h3>Flutter Developer · Primal Codes Pvt Ltd, Kozhikode</h3>
+            <ul>
+              <li>Pioneered Flutter adoption and migrated legacy applications.</li>
+              <li>Onboarded and mentored new engineers to improve delivery consistency.</li>
+              <li>Applied Django to build and maintain robust backend systems.</li>
+              <li>Developed and deployed over 8 applications.</li>
+            </ul>
+          </div>
+        </div>
+
       </div>
     </section>
 
-    <section class="section" id="credentials">
-      <div class="section-heading">
+    <!-- ── Credentials ─────────────────────────────────────────────────────── -->
+    <section class="section container" id="credentials">
+      <div class="section-heading reveal">
         <p class="kicker">Credentials</p>
         <h2>Certification and education.</h2>
       </div>
       <div class="cards">
-        <article class="card">
+
+        <article class="card reveal reveal-delay-1">
+          <div class="card-icon" aria-hidden="true">🏅</div>
           <p class="tag">Certification</p>
-          <h3>Associate Android Developer - Google</h3>
+          <h3>Associate Android Developer — Google</h3>
           <p>
             Validates skills in Android app functionality, UI, data management, debugging,
             and testing.
           </p>
-          <p>
-            <a href="https://www.credential.net/74ea8006-e255-4db0-b206-e1f254edaa9d" target="_blank" rel="noopener noreferrer">View Credential</a>
+          <p style="margin-top:0.85rem;">
+            <a href="https://www.credential.net/74ea8006-e255-4db0-b206-e1f254edaa9d" target="_blank"
+              rel="noopener noreferrer">View Credential ↗</a>
           </p>
         </article>
-        <article class="card">
+
+        <article class="card reveal reveal-delay-2">
+          <div class="card-icon" aria-hidden="true">🎓</div>
           <p class="tag">Education</p>
-          <h3>Bachelor of Technology in Mechanical Engineering</h3>
-          <p>Calicut University, Thrissur, India - January 2017</p>
+          <h3>B.Tech in Mechanical Engineering</h3>
+          <p>Calicut University, Thrissur, India — January 2017</p>
         </article>
+
       </div>
     </section>
+
   </main>
 
+  <!-- ── Footer / Contact ──────────────────────────────────────────────────── -->
   <footer id="contact">
-    <h2>Let's build your next Flutter and Django product.</h2>
-    <p>
-      Open to software engineering roles and freelance projects in mobile and backend
-      development.
-    </p>
-    <div class="contact-links">
-      <a class="btn primary" href="mailto:lubshad4u4@gmail.com">lubshad4u4@gmail.com</a>
-      <a class="btn ghost" href="tel:+919744714697">+91 9744714697</a>
-      <a class="btn ghost" href="https://www.linkedin.com/in/lubshad-pattarathil-3b61701a3/" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a>
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-copy reveal">
+          <p class="kicker">Get in Touch</p>
+          <h2>Let's build your next Flutter &amp; Django product.</h2>
+          <p>
+            Open to software engineering roles and freelance projects in mobile and backend
+            development. Reach out — I'd love to connect.
+          </p>
+          <div class="contact-links">
+            <a class="btn primary" href="mailto:lubshad4u4@gmail.com">lubshad4u4@gmail.com</a>
+            <a class="btn ghost" href="tel:+919744714697">+91 97447 14697</a>
+            <a class="btn ghost" href="https://www.linkedin.com/in/lubshad-pattarathil-3b61701a3/" target="_blank"
+              rel="noopener noreferrer">LinkedIn</a>
+          </div>
+        </div>
+        <div class="footer-brand reveal reveal-delay-2">
+          <span class="lp">LP</span>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2025 Lubshad Pattarathil. All rights reserved.</p>
+        <p>Flutter &amp; Django Engineer · Kozhikode, India</p>
+      </div>
     </div>
   </footer>
+
+  <script>
+    // ── Scroll progress bar
+    const bar = document.getElementById('progress-bar');
+    function updateProgress() {
+      const scrolled = window.scrollY;
+      const total = document.documentElement.scrollHeight - window.innerHeight;
+      bar.style.width = total > 0 ? (scrolled / total * 100) + '%' : '0%';
+    }
+
+    // ── Header scroll style
+    const header = document.getElementById('site-header');
+    function updateHeader() {
+      header.classList.toggle('scrolled', window.scrollY > 20);
+    }
+
+    // ── Reveal on scroll
+    const revealEls = document.querySelectorAll('.reveal');
+    const revealObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach(e => {
+          if (e.isIntersecting) {
+            e.target.classList.add('in-view');
+            revealObserver.unobserve(e.target);
+          }
+        });
+      },
+      { threshold: 0.12, rootMargin: '0px 0px -60px 0px' }
+    );
+    revealEls.forEach(el => revealObserver.observe(el));
+
+    // ── Active nav link
+    const sections = document.querySelectorAll('section[id], footer[id]');
+    const navLinks = document.querySelectorAll('#desktop-nav a');
+    const navObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach(e => {
+          if (e.isIntersecting) {
+            const id = e.target.getAttribute('id');
+            navLinks.forEach(a => {
+              a.classList.toggle('active', a.getAttribute('href') === '#' + id);
+            });
+          }
+        });
+      },
+      { threshold: 0.4 }
+    );
+    sections.forEach(s => navObserver.observe(s));
+
+    // ── Mobile hamburger
+    const hamburger = document.getElementById('hamburger');
+    const mobileNav = document.getElementById('mobile-nav');
+    hamburger.addEventListener('click', () => {
+      const open = hamburger.classList.toggle('open');
+      mobileNav.classList.toggle('open', open);
+      hamburger.setAttribute('aria-expanded', open);
+    });
+    mobileNav.querySelectorAll('a').forEach(a => {
+      a.addEventListener('click', () => {
+        hamburger.classList.remove('open');
+        mobileNav.classList.remove('open');
+        hamburger.setAttribute('aria-expanded', 'false');
+      });
+    });
+
+    // ── Throttled scroll listener
+    let ticking = false;
+    window.addEventListener('scroll', () => {
+      if (!ticking) {
+        requestAnimationFrame(() => {
+          updateProgress();
+          updateHeader();
+          ticking = false;
+        });
+        ticking = true;
+      }
+    }, { passive: true });
+
+    updateHeader();
+  </script>
 </body>
+
 </html>
